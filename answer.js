@@ -1,3 +1,5 @@
+
+
 //htmlタグのid取得
 let tu = document.getElementById("main_container");
 let ti = document.getElementById("titleNumber");
@@ -30,6 +32,10 @@ let scoreUrl;
 //間違単語
 let missNumber = "miss=";
 
+let url = new URL(window.location.href);
+	if(!url.search.Params.get('mode')){
+		location.href = at;
+	}
 
 //ランダムで数字を取得
 function randomNum(num, d) {
@@ -182,10 +188,12 @@ function deletu() {
 let paramItem = [];
 let param;
 
-let url
+
 
 //問題のまとまりを検索
 function checkPrama() {
+	
+	
 	//パラメータを取得
 	url = location.search.substring(1);
 
