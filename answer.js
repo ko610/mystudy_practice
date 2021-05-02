@@ -32,10 +32,7 @@ let scoreUrl;
 //間違単語
 let missNumber = "miss=";
 
-let url = new URL(window.location.href);
-	if(!url.search.Params.get('mode')){
-		location.href = "https://ko610.github.io/mystudy_practice/?mode=1&n=1&id=1";
-	}
+let url
 
 //ランダムで数字を取得
 function randomNum(num, d) {
