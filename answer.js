@@ -34,7 +34,7 @@ let missNumber = "miss=";
 
 let url = new URL(window.location.href);
 	if(!url.search.Params.get('mode')){
-		location.href = at;
+		location.href = https://ko610.github.io/mystudy_practice/?mode=1&n=1&id=1;
 	}
 
 //ランダムで数字を取得
