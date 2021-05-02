@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>charange</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/lesson_answer.css">
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="top_container">
+
+			<div class="top_wrapper">
+
+				<div><a href="javascript:backhome();" class="btn3">✖</a></div>
+
+				<div id="popTitle">
+					<p id="titleNumber"></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="main_container">
+
+			<div class="question_wrapper">
+				<p id="question_number"></p>
+				<p id="question"></p>
+
+			</div>
+
+			<div id="answer">
+				<button type="button" class="btn1" value="1" onclick="chack(this); question(this)"
+					id="answerBtn1"></button>
+				<button type="button" class="btn1" value="2" onclick="chack(this); question(this)"
+					id="answerBtn2"></button>
+				<button type="button" class="btn1" value="3" onclick="chack(this); question(this)"
+					id="answerBtn3"></button>
+				<button type="button" class="btn1" value="4" onclick="chack(this); question(this)"
+					id="answerBtn4"></button>
+			</div>
+
+			<button type="button" onclick="checkknow(this);question()" class="knowBtn btn2" id="dontknow">わからない</button>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="../wards.js"></script>
+	<script type="text/javascript" src="../answer.js"></script>
+	<script>
+		let userUrl;
+		let urlID = location.search.substring(1);
+
+		function backhome() {
+			urlID = urlID.split('&');
+			urlID = urlID[2];
+			location.href = "choose_lesson.html?" + urlID;
+		}
+	</script>
+</body>
+
+</html>
