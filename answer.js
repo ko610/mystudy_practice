@@ -27,7 +27,6 @@ let ClassBtn2;
 //問題番号の区切り
 let numberBox = 10;
 let ranNumber = numberBox - 1;
-console.log(wards[1].english);
 
 //回答を3つ選ぶための変数
 let random;
